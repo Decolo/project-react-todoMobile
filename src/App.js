@@ -67,10 +67,10 @@ class App extends Component {
                     {this.state.isInputShowed ? 
                     <div className="input-box-wrapper">
                         <div className="container">
-                        <a href="#" onClick={this.showTodoInput.bind(this)}>Close</a>
                         <TodoInput content={ this.state.newTodo }
                         onChange={ this.changeTitle.bind(this) }
                         onSubmit={ this.addTodo.bind(this) }/> {/*见鬼了， 这一段拷贝来显示正常， 自己写的就只能一个一个的输入*/}
+                        <a href="#" onClick={this.showTodoInput.bind(this)}>Close</a>
                         </div>
                         <div className="input-box-bp">
                         </div> 
