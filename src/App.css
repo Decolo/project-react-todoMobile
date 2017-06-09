@@ -1,0 +1,135 @@
+/*------------------------iconfont--------------------------*/
+
+.App {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    background-color: #fffbd2;
+    color: #595a6a;
+}
+
+
+/*---------------------first-row------------------------*/
+
+.App .first-row {
+    text-align: left;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    margin-bottom: .6rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.App .first-row .title {
+    font-weight: 600;
+    font-size: 2rem;
+    font-family: tahoma, arial, 'Hiragino Sans GB';
+}
+
+.App .first-row .sign-out {
+    margin-top: .6rem;
+    display: block;
+    height: 1.4rem;
+    width: 1.4rem;
+    display: inline-block;
+}
+
+.App .first-row .sign-out:hover {
+    transform: scale(1.2);
+    transition: .2s
+}
+
+.App .first-row .sign-out .icon-dengchu {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.App .first-row .sign-out .icon-dengchu:hover {
+    color: #333;
+}
+
+
+/*---------------------first-row------------------------*/
+
+
+/*---------------------second-row------------------------*/
+
+.App .second-row {
+    text-align: left;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: .6rem;
+    padding-right: .6rem;
+}
+
+.App .second-row a {
+    text-align: center;
+    display: inline-block;
+    height: 1rem;
+    border-radius: 1.2rem;
+    border: 2px solid #ff4848;
+    color: #ff4848;
+    line-height: 1rem;
+    padding-left: .3rem;
+    padding-right: .3rem;
+    font-weight: 600;
+    font-size: .8rem;
+    box-sizing: content-box;
+}
+
+.App .second-row a:hover {
+    border: 2px solid #ff716a;
+    color: #ff716a;
+    transform: scale(1.2);
+    transition: .2s
+}
+
+.App .second-row a:focus {
+    border: 4px solid #ff4848;
+    color: #ff4848;
+    transform: scale(1.2);
+    transition: .3s;
+}
+
+.App .todo {
+    float: left;
+    margin-right: .6rem;
+}
+
+.App .todo:before {
+    content: '';
+    display: inline-block;
+    width: .8rem;
+    height: .8rem;
+    border: 4px solid #ff4848;
+    border-radius: 100%;
+    box-sizing: border-box;
+}
+
+.App .todo span {
+    font-size: .8rem;
+    font-weight: 600;
+    padding-left: .2rem;
+}
+
+.App .done {
+    float: left;
+}
+
+.App .done:before {
+    content: '\2714';
+    display: inline-block;
+    width: .8rem;
+    height: .8rem;
+    box-sizing: border-box;
+    color: #ff4848;
+}
+
+.App .done span {
+    font-size: .8rem;
+    font-weight: 600;
+    padding-left: .2rem;
+}

@@ -1,0 +1,57 @@
+.App>.input-box-wrapper {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.App>.input-box-wrapper>.input-box-bp {
+    width: 100%;
+    height: 100%;
+    background-color: #313131;
+    filter: blur(5px);
+    opacity: .6;
+}
+
+.App>.input-box-wrapper>.container {
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 12rem;
+}
+
+.App>.input-box-wrapper>.container>a {
+    display: block;
+    width: 4rem;
+    color: #ff4848;
+    font-weight: 600;
+    font-size: .95rem;
+    margin: 0 auto;
+    border: 2px solid #ff4848;
+    box-sizing: content-box;
+    line-height: 1.5rem;
+    border-radius: 1.5rem;
+}
+
+.App .input-box .input {
+    /*border: 4px solid #ff4848;*/
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    width: 100%;
+    height: 12rem;
+    padding-top: .5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1rem;
+    background-color: #fffbd2;
+    color: #ff4848;
+    font-weight: 600;
+}
+
+.App .second-row .input-box .input:focus {
+    outline: none;
+}

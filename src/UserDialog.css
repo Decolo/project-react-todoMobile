@@ -1,0 +1,261 @@
+/*--------------------iconfont-------------*/
+
+@font-face {
+    font-family: "iconfont";
+    src: url('./font/iconfont.eot?t=1496589594765');
+    /* IE9*/
+    src: url('./font/iconfont.eot?t=1496589594765#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('./font/iconfont.woff?t=1496589594765') format('woff'), /* chrome, firefox */
+    url('./font/iconfont.ttf?t=1496589594765') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    url('./font/iconfont.svg?t=1496589594765#iconfont') format('svg');
+    /* iOS 4.1- */
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-dengchu:before {
+    content: "\e642";
+}
+
+.icon-yonghu:before {
+    content: "\e61a";
+}
+
+.icon-youjian:before {
+    content: "\e622";
+}
+
+.icon-shanchu:before {
+    content: "\e62a";
+}
+
+.icon-bianji:before {
+    content: "\e62b";
+}
+
+.icon-suoding:before {
+    content: "\e634";
+}
+
+
+/*--------------------iconfont-------------*/
+
+.user-dialog {
+    /*width: 100%;
+    height: 100%;*/
+    background-color: #fffbd2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-dialog h1 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+
+/*-------------------------user-dialog-wrapper------------------*/
+
+.user-dialog .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.user-dialog .content .sign-tab {
+    /*border: 1px solid red;*/
+    width: 100%;
+    text-align: center;
+}
+
+
+/*------------------nav------------------*/
+
+.user-dialog .content .sign-tab nav>label {
+    display: inline-block;
+    padding: 10px 10px 20px 10px;
+    color: #aca9a1;
+    cursor: pointer;
+    display: none;
+}
+
+.user-dialog .content .sign-tab nav>label>input {
+    display: none;
+}
+
+.user-dialog .content .sign-tab nav>label>span {
+    font-size: 0.6rem;
+}
+
+.user-dialog .content .sign-tab nav>label[data=false] {
+    font-size: 0.8rem;
+    color: inherit;
+    font-weight: 600;
+    display: block;
+}
+
+
+/*------------------nav------------------*/
+
+.user-dialog .content form .row {
+    width: 100%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin: 0 auto;
+    display: flex;
+}
+
+.user-dialog .content form .row label {
+    flex-grow: 1;
+}
+
+.user-dialog .content form .row input {
+    border: none;
+    border-radius: 1rem;
+    flex-grow: 3;
+    color: inherit;
+    font-size: 1rem;
+    outline: none;
+    height: 1.8rem;
+    background-color: rgb(138, 202, 200);
+    color: white;
+    margin-right: 1rem;
+    box-sizing: border-box;
+    padding-left: 1rem;
+}
+
+.user-dialog .content form .row .icon-yonghu {
+    color: rgb(138, 202, 200);
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+.user-dialog .content form .row .icon-suoding {
+    color: rgb(138, 202, 200);
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+.user-dialog .content form .row .icon-youjian {
+    color: rgb(138, 202, 200);
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+.user-dialog .content form .action {
+    width: 100%
+}
+
+.user-dialog .content form .action button {
+    box-sizing: content-box;
+    display: block;
+    width: 10rem;
+    height: 2.5rem;
+    border-radius: 2.5rem;
+    border: 2px solid #ff6d6d;
+    background-color: #fffbd2;
+    color: #ff6d6d;
+    margin: 0 auto;
+    margin-top: 1rem;
+    cursor: pointer;
+    outline: none;
+    font-weight: 600;
+}
+
+.user-dialog .content form .forget-password {
+    text-align: center;
+    font-size: .6rem;
+    display: block;
+    font-weight: 600;
+    color: #ff6d6d;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.user-dialog .content .forget-tab h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.user-dialog .content .forget-tab p:first-of-type {
+    margin-top: 0.4rem;
+}
+
+.user-dialog .content .forget-tab p {
+    font-size: 0.8rem;
+    line-height: 1rem;
+    text-align: left;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: rgb(138, 202, 200);
+    margin-bottom: 0.4rem;
+    word-break: keep-all;
+}
+
+.user-dialog .content form .row label {
+    height: 1.8rem;
+    margin-left: 0.4rem;
+}
+
+.user-dialog .content form .row .icon-youjian {
+    color: rgb(138, 202, 200);
+    font-weight: 500;
+    font-size: 1.6rem;
+    position: relative;
+    top: 2px;
+}
+
+.user-dialog .content form .row input {
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    outline: none;
+    height: 1.8rem;
+    background-color: rgb(138, 202, 200);
+    padding-left: 10px;
+    color: white;
+}
+
+.user-dialog .content form .actions {
+    text-align: center;
+}
+
+.user-dialog .content .forget-tab form .actions button {
+    box-sizing: content-box;
+    display: block;
+    width: 10rem;
+    height: 2.5rem;
+    border-radius: 2.5rem;
+    border: 2px solid #ff6d6d;
+    background-color: #fffbd2;
+    color: #ff6d6d;
+    margin: 0 auto;
+    margin-top: 1rem;
+    cursor: pointer;
+    outline: none;
+    font-weight: 600;
+}
+
+.user-dialog .content .forget-tab form .back-signup {
+    display: block;
+    font-size: 0.6rem;
+    font-weight: 600;
+    color: #ff6d6d;
+    text-decoration: underline;
+}
