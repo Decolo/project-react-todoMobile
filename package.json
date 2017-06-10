@@ -11,7 +11,7 @@
     "devDependencies": {
         "react-scripts": "0.9.5"
     },
-    "homepage": "https://decolo.github.io/project-react-todo-mobile/build",
+    "homepage": "https://decolo.github.io/project-react-todoMobile/build",
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
