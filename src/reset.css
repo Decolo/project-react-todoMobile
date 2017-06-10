@@ -23,18 +23,23 @@ a {
     text-decoration: none;
 }
 
-::-webkit-scrollbar {
-    width: 10px;
+
+/*::-webkit-scrollbar {
+    width: 6px;
 }
 
 ::-webkit-scrollbar-track {
     border-radius: 8px;
     /*border-radius: 10px;*/
-    background-color: #f5d7cf;
+
+
+/* background-color: #f5d7cf;
 }
 
 ::-webkit-scrollbar-thumb {
     /*border-radius: 10px;*/
-    border-radius: 8px;
+
+
+/*  border-radius: 8px;
     background-color: #ff4848
-}
+}*/

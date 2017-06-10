@@ -24,7 +24,7 @@
     width: 80%;
 }
 
-.App>.input-box-wrapper>.container>a {
+.App>.input-box-wrapper>.container>div>.input-box>.input-btn-add {
     display: block;
     width: 4rem;
     color: #ff4848;
@@ -37,7 +37,7 @@
     border-radius: 1.5rem;
 }
 
-.App .input-box .input {
+.App>.input-box-wrapper>.container>div>.input-box .input {
     border: none;
     outline: none;
     box-sizing: border-box;
@@ -50,6 +50,26 @@
     background-color: #fff29b;
     color: #474747;
     font-weight: 600;
+}
+
+.App>.input-box-wrapper>.container>div {
+    position: relative
+}
+
+.App>.input-box-wrapper>.container>div>.input-btn-close {
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 1.2rem;
+    line-height: 1.2rem;
+    font-size: .8rem;
+    background-color: white;
+    color: #555;
+    display: block;
+    box-sizing: content-box;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    transform: translate(-60%, -40%)
 }
 
 .App .second-row .input-box .input:focus {

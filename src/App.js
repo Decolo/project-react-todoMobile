@@ -46,7 +46,7 @@ class App extends Component {
                         index={ 'item' + index }
                         onToggle={ this.toggle.bind(this) }
                         onDelete={ this.delete.bind(this) }
-                        onEdite={this.edite.bind(this)}
+                        onEdite={this.edit.bind(this)}
                         /> 
                     </li>
                 )
@@ -67,12 +67,14 @@ class App extends Component {
                     {this.state.isInputShowed ? 
                     <div className="input-box-wrapper">
                         <div className="container">
-                        <TodoInput content={ this.state.newTodo }
-                        onChange={ this.changeTitle.bind(this) }
-                        onSubmit={ this.addTodo.bind(this) }/> {/*见鬼了， 这一段拷贝来显示正常， 自己写的就只能一个一个的输入*/}
-                        <a href="#" onClick={this.showTodoInput.bind(this)}>Close</a>
+                            <div>
+                                <TodoInput content={ this.state.newTodo }
+                                onChange={ this.changeTitle.bind(this) }
+                                onSubmit={ this.addTodo.bind(this) }/> {/*见鬼了， 这一段拷贝来显示正常， 自己写的就只能一个一个的输入*/}
+                                <a href="#" onClick={this.showTodoInput.bind(this)} className="input-btn-close">x</a>
+                            </div>
                         </div>
-                        <div className="input-box-bp">
+                        <div className="input-box-bp" onClick={this.showTodoInput.bind(this)}>
                         </div> 
                     </div> : null}
                     <ul className="todos-list">{todos}</ul>
@@ -107,12 +109,12 @@ class App extends Component {
             todoList: this.state.todoList
         })
     }
-    addTodo(e) {
+    addTodo(content) {
          //添加一个新的todo
         let lengthOfList = this.state.todoList.length
         this.state.todoList.push({
             itemId: lengthOfList++,
-            itemContent: e.target.value,
+            itemContent: content,
             status: null,
             deleted: false,
         })
@@ -131,7 +133,7 @@ class App extends Component {
         updataData(this.state.todoList)
     }
     /*-------改-------*/
-    edite(e,todo){
+    edit(e,todo){
         todo.itemContent = e.target.value
         let stateCopy = deepCopyByJson(this.state)
         this.setState(stateCopy)
