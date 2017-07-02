@@ -118,11 +118,13 @@ class UserDialog extends Component {
         let signInForm = (<form className="sign-in" onSubmit={this.signIn.bind(this)}>
             <div className="row">
                 <label htmlFor="username"><i className="iconfont icon-yonghu"></i></label>
-                <input type="text" id="username" onChange={this.changeFormData.bind(this, 'username')} />
+                <input type="text" id="username" onChange={this.changeFormData.bind(this, 'username')} 
+                placeholder="username"/>
             </div>
             <div className="row">
                 <label htmlFor="password"><i className="iconfont icon-suoding"></i></label>
-                <input type="password" id="password" onChange={this.changeFormData.bind(this, 'password')} />
+                <input type="password" id="password" onChange={this.changeFormData.bind(this, 'password')} 
+                placeholder="password"/>
             </div>
             <div className="row action">
                 <button type="submit">Sign In</button>
@@ -132,15 +134,18 @@ class UserDialog extends Component {
         let signUpForm = (<form className="sign-up" onSubmit={this.signUp.bind(this)}>
             <div className="row">
                 <label htmlFor="mail"><i className="iconfont icon-youjian"></i></label>
-                <input type="text" id="mail" onChange={this.changeFormData.bind(this, 'email')} />
+                <input type="text" id="mail" onChange={this.changeFormData.bind(this, 'email')} 
+                placeholder="email"/>
             </div>
             <div className="row">
                 <label htmlFor="username"><i className="iconfont icon-yonghu"></i></label>
-                <input type="text" id="username" onChange={this.changeFormData.bind(this, 'username')} />
+                <input type="text" id="username" onChange={this.changeFormData.bind(this, 'username')} 
+                placeholder="username"/>
             </div>
             <div className="row">
                 <label htmlFor="password"><i className="iconfont icon-suoding"></i></label>
-                <input type="password" id="password" onChange={this.changeFormData.bind(this, 'password')} />
+                <input type="password" id="password" onChange={this.changeFormData.bind(this, 'password')} 
+                placeholder="password"/>
             </div>
             <div className="row action">
                 <button type="submit">Sign Up</button>
@@ -177,7 +182,8 @@ class UserDialog extends Component {
                     <div className="row">
                         <label><i className="iconfont icon-youjian"></i></label>
                         <input type="text"
-                            onChange={this.changeFormData.bind(this, 'email')} />
+                            onChange={this.changeFormData.bind(this, 'email')}
+                            placeholder="email" />
                     </div>
                     <div className="row actions">
                         <button type="submit" onClick={this.resetPassword.bind(this)}>Send E-mails</button>

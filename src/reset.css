@@ -43,3 +43,31 @@ a {
 /*  border-radius: 8px;
     background-color: #ff4848
 }*/
+
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #0f989d;
+    font-size: .8rem;
+    opacity: .6;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #0f989d;
+    font-size: .8rem;
+    opacity: .6;
+}
+
+:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #0f989d;
+    font-size: .8rem;
+    opacity: .6;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: #0f989d;
+    font-size: .8rem;
+    opacity: .6;
+}
